@@ -6,5 +6,13 @@
   </head>
   <body>
     Así de fácil es subir una página al mundo! :D
+    <p id="get">
+
+    </p>
   </body>
+  <script>
+    fetch("/api/HolaMundo")
+      .then(response => response.text())
+      .then(data => Document.getElementById("get").innerText = data)
+  </script>
 </html>
