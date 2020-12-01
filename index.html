@@ -13,6 +13,6 @@
   <script>
     fetch("/api/HolaMundo")
       .then(response => response.text())
-      .then(data => Document.getElementById("get").innerText = data)
+      .then(data => document.getElementById("get").innerText = data)
   </script>
 </html>
